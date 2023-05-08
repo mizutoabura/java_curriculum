@@ -21,29 +21,48 @@ public class Qes1_13 {
 		//		・バイト型・短整数型・整数型・長整数型			
 		//		・単精度浮動小数点数型・倍精度浮動小数点数型			
 		//		・文字型・文字列型			
-		//		・ブーリアン型		
+		//		・ブーリアン型	
+		
+				// バイト型の変数宣言
 				byte by;
+				// 短整数型の変数宣言
 				short sh;
+				// 整数型の変数宣言
 				int in;
+				// 長整数型の変数宣言
 				long lo;
+				// 単精度浮動小数点数型の変数宣言
 				float fl;
+				// 倍精度浮動小数点数型の変数宣言
 				double dou;
+				// 文字型の変数宣言
 				char ch;
+				// 文字列型の変数宣言
 				String st;
+				// ブーリアン型の変数宣言
 				boolean bo;
 		
 		
 		
 		//	2				
-		//		それぞれのローカル変数をローカル内でそれぞれの初期値を代入し初期化してください			
+		//		それぞれのローカル変数をローカル内でそれぞれの初期値を代入し初期化してください
+				// バイト型の初期値を代入
 				by = 0;
+				// 短整数型の初期値を代入
 				sh = 0;
+				// 整数型の初期値を代入
 				in = 0;
+				// 短整数型の初期値を代入
 				lo = 0;
+				// 単精度浮動小数点数型の初期値を代入
 				fl = 0.0f;
+				// 倍精度浮動小数点数を代入
 				dou =0.0d;
+				// 短整数型の初期値を代入
 				ch = '\u0000';
+				// 文字型の初期値を代入
 				st = null;
+				// ブーリアン型の初期値を代入
 				bo = false;
 				
 		//	3				
@@ -57,14 +76,24 @@ public class Qes1_13 {
 		//		・文字型		a	
 		//		・文字列型		ハロー	
 		//		・ブーリアン型		true	
+				
+				// バイト型10を代入
 				by = 10;
+				// 短整数型100を代入
 				sh = 100;
+				// 整数型1000を代入
 				in = 1000;
+				// 長整数型10000を代入
 				lo = 10000;
+				// 単精度浮動小数点数型9.5を代入	
 				fl = 9.5f;
+				// 倍精度浮動小数点数型10.5を代入
 				dou =10.5d;
+				// 文字型aを代入
 				ch = 'a';
+				// 文字列型ハローを代入
 				st = "ハロー";
+				// ブーリアン型trueを代入
 				bo = true;
 				
 				
@@ -83,13 +112,21 @@ public class Qes1_13 {
 		//		10000000000		10000000000	小数点以外の数字を全てかける
 		//		0.105		0.105	10.5割る100をする
 		//		-90		-90	10引く100をする
+				// 整数すべてを足す
 				System.out.println(by + sh + in + lo);
+				// 10を2回い足す
 				System.out.println(by + by);
+				// a ハロー true	
 				System.out.println(ch + st + bo);
+				// 数字を全て足す
 				System.out.println(by + sh + in + lo + fl + dou);
+				// 小数点以外の数字を全てかける
 				System.out.println(by * sh * in * lo);
+				// 10.5割る100をする
 				System.out.println(dou / sh);
+				// 10引く100をする
 				System.out.println(by - sh);
+				// 改行
 				System.out.println("");
 				
 		//					
@@ -99,9 +136,11 @@ public class Qes1_13 {
 		//		　String num="20";			
 		//		　int num1=23;			
 		//		　System.out.println("ハローJAVA"+(num+num1));	
+				// 全角スペースを削除
 				String num="20";			
 				int num1=23;			
 				System.out.println("ハローJAVA"+(num+num1));
+				//改行
 				System.out.println("");
 		//					
 		//	6				
@@ -114,27 +153,42 @@ public class Qes1_13 {
 		//		「年齢は○○歳です」			
 		//		「身長は○○cmです」			
 		//		「体重は○○kgです」			
-		//		「好きな食べ物は○○です」			
+		//		「好きな食べ物は○○です」	
+				// Stringに名前を代入
 				String name = "山田太郎";
+				//intに年齢を代入
 				int age = 18;
+				// doubleに身長を代入
 				double height = 170.5;
+				// doubleに体重を代入
 				double weight = 62.2;
+				// Stringに好きな食べ物を代入
 				String food = "寿司";
 				
+				// コンソールに名前を出力
 				System.out.println("初めまして" + name + "です");
+				// コンソールに年齢を出力
 				System.out.println("年齢は" +age + "です");
+				// コンソールに身長を出力
 				System.out.println("身長は" + height + "cmです");
+				// コンソールに体重を出力
 				System.out.println("体重は" + weight + "kgです");
+				// コンソールに好きな食べ物を出力
 				System.out.println("好きな食べ物は" + food + "です");
+				// 改行
 				System.out.println("");
 				
 		//	7				
 		//		6で作成した自己紹介に続いてBMIが出力されるようにしてください			
 		//		「BMIは○○です」			
 		//		ただし計算は数値を直書きせず、全て変数を使ってすること	
+				// heightをMになおす
 				double heightM = height/100;
+				// bmiにbmiの計算式を代入
 				double bmi = weight / heightM / heightM;
+				// コンソールにBMIを出力
 				System.out.println("BMIは" + bmi + "です");
+				// 改行
 				System.out.println("");
 		//					
 		//	8				
@@ -144,19 +198,32 @@ public class Qes1_13 {
 		//		　身長168.5cmです			
 		//		　体重は64.2kgです			
 		//		　好きな食べ物はオムライスです			
-		//		　BMIは22.6です			
+		//		　BMIは22.6です		
+				// nameに名前を再代入
 				name = "鈴木一郎";
+				// ageに年齢を再代入
 				age = 24;
+				// heightに身長を再代入
 				height = 168.5;
+				// weightに体重を再代入
 				weight = 64.2;
+				// foodに好きな食べ物をを再代入
 				food = "オムライス";
+				// bmiに数値を再代入
 				bmi = 22.6;
+				// コンソールに名前を出力
 				System.out.println("初めまして" + name + "です");
+				// コンソールに年齢を出力
 				System.out.println("年齢は" +age + "です");
+				// コンソールに身長を出力
 				System.out.println("身長は" + height + "cmです");
+				// コンソールに体重を出力
 				System.out.println("体重は" + weight + "kgです");
+				// コンソールに好きな食べ物を出力
 				System.out.println("好きな食べ物は" + food + "です");
+				// コンソールにBMIを出力
 				System.out.println("BMIは" + bmi + "です");
+				// 改行
 				System.out.println("");
 				
 				
@@ -168,34 +235,56 @@ public class Qes1_13 {
 		//		　体重は128.4kgです			
 		//		　好きな食べ物はオムライスです			
 		//		　BMIは11.31です	
+				//ageに自己代入
 				age += 24;
+				// heightに自己代入
 				height += 168.5;
+				// weightに自己代入
 				weight += 64.2;
+				// bmiに再代入
 				bmi = 11.31;
+				// コンソールに名前を出力
 				System.out.println("初めまして" + name + "です");
+				// コンソールに年齢を出力
 				System.out.println("年齢は" +age + "です");
+				// コンソールに身長を出力
 				System.out.println("身長は" + height + "cmです");
+				// コンソールに体重を出力
 				System.out.println("体重は" + weight + "kgです");
+				// コンソールに好きな食べ物を出力
 				System.out.println("好きな食べ物は" + food + "です");
+				// コンソールにBMIを出力
 				System.out.println("BMIは" + bmi + "です");
+				// 改行
 				System.out.println("");
 				
 		//					
 		//	10				
 		//		8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません	
+				// ageに再代入
 				age = 24;
+				// jugementに年齢が25歳以上ならtrueになる式を代入
 				boolean  jugement = age >= 24;
+				// コンソールにjugementの結果を出力
 				System.out.println(jugement);
+				// 改行
 				System.out.println("");
 		//					
 		//	11				
 		//		8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください	
+				// heightに8で使用した値を再代入
 				height = 168.5;
+				// weightに8で使用した値を再代入
 				weight = 64.2;
+				// ageを文字列型に型変換しageStrに代入
 				String ageStr = String.valueOf(age);
+				// heightを文字列型に型変換しheightStrに代入
 				String heightStr = String.valueOf(height);
+				// weightを文字列型に型変換しweightStrに代入
 				String weightStr = String.valueOf(weight);
+				// コンソールに【年齢・身長・体重】を文字列型に型変換し繋げて出力
 				System.out.println(ageStr + heightStr + weightStr);
+				// 改行
 				System.out.println("");
 				
 		//					
@@ -203,21 +292,26 @@ public class Qes1_13 {
 		//		11で変換した【年齢・身長】を整数型に変換して出力してください	
 //				Integer ageInt = Integer.valueOf(ageStr);
 //				Integer heightInt = Integer.valueOf(heightStr);
+				// ageStrを整数型に変換
 				int ageInt = Integer.parseInt(ageStr);
+				// heightStrを少数型に変換
 				double heightInt = Double.parseDouble(heightStr);
-//				 Integer heightInt = Integer.valueOf(heightStr);
-//				int heightInt = (int)ageStr;
+				// ageIntをコンソールに出力
 				System.out.println(ageInt);
+				// heighIntをキャストしてコンソールに出力
 				System.out.println((int)heightInt);
+				// 改行
 				System.out.println("");
 				
 		//					
 		//	13				
 		//		12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください			
 		//		ただしif文は使わないでください			
-
-		boolean jagement13 = ageInt == 25 && heightInt >= 160;
-		System.out.println(jagement13);
+				
+				// jagement13に12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueになる四季を代入
+				boolean jagement13 = ageInt == 25 && heightInt >= 160;
+				// jagement13の結果をコンソールに出力
+				System.out.println(jagement13);
 		
 		
 		
