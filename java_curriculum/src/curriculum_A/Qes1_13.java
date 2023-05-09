@@ -52,8 +52,8 @@ public class Qes1_13 {
 				sh = 0;
 				// 整数型の初期値を代入
 				in = 0;
-				// 長整数型の初期値を代入
-				lo = 0L;
+				// 短整数型の初期値を代入
+				lo = 0;
 				// 単精度浮動小数点数型の初期値を代入
 				fl = 0.0f;
 				// 倍精度浮動小数点数を代入
@@ -84,7 +84,7 @@ public class Qes1_13 {
 				// 整数型1000を代入
 				in = 1000;
 				// 長整数型10000を代入
-				lo = 10000L;
+				lo = 10000;
 				// 単精度浮動小数点数型9.5を代入	
 				fl = 9.5f;
 				// 倍精度浮動小数点数型10.5を代入
@@ -117,7 +117,7 @@ public class Qes1_13 {
 				// 10を2回い足す
 				System.out.println(by + by);
 				// a ハロー true	
-				System.out.println(ch + " "  + st + " " + bo);
+				System.out.println(ch + st + bo);
 				// 数字を全て足す
 				System.out.println(by + sh + in + lo + fl + dou);
 				// 小数点以外の数字を全てかける
@@ -137,7 +137,7 @@ public class Qes1_13 {
 		//		　int num1=23;			
 		//		　System.out.println("ハローJAVA"+(num+num1));	
 				// 全角スペースを削除
-				int num=20;			
+				String num="20";			
 				int num1=23;			
 				System.out.println("ハローJAVA"+(num+num1));
 				//改行
@@ -170,9 +170,9 @@ public class Qes1_13 {
 				// コンソールに年齢を出力
 				System.out.println("年齢は" +age + "です");
 				// コンソールに身長を出力
-				System.out.println("身長は" + (int)Math.ceil(height) + "cmです");
+				System.out.println("身長は" + height + "cmです");
 				// コンソールに体重を出力
-				System.out.println("体重は" + (int)Math.ceil(weight) + "kgです");
+				System.out.println("体重は" + weight + "kgです");
 				// コンソールに好きな食べ物を出力
 				System.out.println("好きな食べ物は" + food + "です");
 				// 改行
@@ -214,7 +214,7 @@ public class Qes1_13 {
 				// コンソールに名前を出力
 				System.out.println("初めまして" + name + "です");
 				// コンソールに年齢を出力
-				System.out.println("年齢は" +age + "歳です");
+				System.out.println("年齢は" +age + "です");
 				// コンソールに身長を出力
 				System.out.println("身長は" + height + "cmです");
 				// コンソールに体重を出力
@@ -246,7 +246,7 @@ public class Qes1_13 {
 				// コンソールに名前を出力
 				System.out.println("初めまして" + name + "です");
 				// コンソールに年齢を出力
-				System.out.println("年齢は" +age + "歳です");
+				System.out.println("年齢は" +age + "です");
 				// コンソールに身長を出力
 				System.out.println("身長は" + height + "cmです");
 				// コンソールに体重を出力
@@ -264,7 +264,7 @@ public class Qes1_13 {
 				// ageに再代入
 				age = 24;
 				// jugementに年齢が25歳以上ならtrueになる式を代入
-				boolean  jugement = age >= 25;
+				boolean  jugement = age >= 24;
 				// コンソールにjugementの結果を出力
 				System.out.println(jugement);
 				// 改行
@@ -295,13 +295,11 @@ public class Qes1_13 {
 				// ageStrを整数型に変換
 				int ageInt = Integer.parseInt(ageStr);
 				// heightStrを少数型に変換
-//				double heightInt = Double.parseDouble(heightStr);
-				int heightInt = (int) Double.parseDouble(heightStr);
+				double heightInt = Double.parseDouble(heightStr);
 				// ageIntをコンソールに出力
 				System.out.println(ageInt);
 				// heighIntをキャストしてコンソールに出力
 				System.out.println((int)heightInt);
-				
 				// 改行
 				System.out.println("");
 				
@@ -311,11 +309,12 @@ public class Qes1_13 {
 		//		ただしif文は使わないでください			
 				
 				// jagement13に12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueになる四季を代入
-				boolean jagement13 = ageInt == 25 || heightInt >= 160;
+				boolean jagement13 = ageInt == 25 && heightInt >= 160;
 				// jagement13の結果をコンソールに出力
 				System.out.println(jagement13);
-				
-
+		
+		
+		
 		
 		
 		
