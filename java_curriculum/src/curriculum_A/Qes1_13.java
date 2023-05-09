@@ -137,6 +137,7 @@ public class Qes1_13 {
 		//		　int num1=23;			
 		//		　System.out.println("ハローJAVA"+(num+num1));	
 				// 全角スペースを削除
+				// Stringからint型に変更
 				int num=20;			
 				int num1=23;			
 				System.out.println("ハローJAVA"+(num+num1));
@@ -170,9 +171,9 @@ public class Qes1_13 {
 				// コンソールに年齢を出力
 				System.out.println("年齢は" +age + "です");
 				// コンソールに身長を出力
-				System.out.println("身長は" + (int)Math.ceil(height) + "cmです");
+				System.out.println("身長は" + height + "cmです");
 				// コンソールに体重を出力
-				System.out.println("体重は" + (int)Math.ceil(weight) + "kgです");
+				System.out.println("体重は" + weight + "kgです");
 				// コンソールに好きな食べ物を出力
 				System.out.println("好きな食べ物は" + food + "です");
 				// 改行
@@ -186,8 +187,8 @@ public class Qes1_13 {
 				double heightM = height/100;
 				// bmiにbmiの計算式を代入
 				double bmi = weight / heightM / heightM;
-				// コンソールにBMIを出力
-				System.out.println("BMIは" + bmi + "です");
+				// コンソールにBMIを出力 bmiの値を少数第一位まで表示
+				System.out.println("BMIは" + String.format("%.1f", bmi) + "です");
 				// 改行
 				System.out.println("");
 		//					
@@ -294,13 +295,12 @@ public class Qes1_13 {
 //				Integer heightInt = Integer.valueOf(heightStr);
 				// ageStrを整数型に変換
 				int ageInt = Integer.parseInt(ageStr);
-				// heightStrを少数型に変換
-//				double heightInt = Double.parseDouble(heightStr);
+				// heightStrをdouble型にしてキャストでint型に変換
 				int heightInt = (int) Double.parseDouble(heightStr);
 				// ageIntをコンソールに出力
 				System.out.println(ageInt);
-				// heighIntをキャストしてコンソールに出力
-				System.out.println((int)heightInt);
+				// heighIntをコンソールに出力
+				System.out.println(heightInt);
 				
 				// 改行
 				System.out.println("");
