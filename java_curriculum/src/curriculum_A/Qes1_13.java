@@ -309,8 +309,3 @@ public class Qes1_13 {
 	}
 
 }
-
-				// jagement13に12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueになる四季を代入
-				boolean jagement13 = ageInt == 25 || heightInt >= 160;
-		//					
-		//					
