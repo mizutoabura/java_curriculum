@@ -5,8 +5,6 @@ public class Qes1_13 {
 	public static void main(String[] args) {
 
 		
-
-		
 				// 重要	
 				// フォルダ構成の指定
 				// パッケージ「curriculum_A」の作成後、直下に下記のクラスファイルを作成	
@@ -39,8 +37,6 @@ public class Qes1_13 {
 				String st;
 				// ブーリアン型の変数宣言
 				boolean bo;
-		
-		
 		
 				// 2
 				// それぞれのローカル変数をローカル内でそれぞれの初期値を代入し初期化してください
@@ -218,7 +214,6 @@ public class Qes1_13 {
 				// 改行
 				System.out.println("");
 				
-				
 				// 9
 				// 8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください			
 				// 初めまして鈴木一郎です
@@ -250,7 +245,6 @@ public class Qes1_13 {
 				// 改行
 				System.out.println("");
 				
-				
 				// 10
 				// 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
 				// ageに再代入
@@ -279,7 +273,6 @@ public class Qes1_13 {
 				// 改行
 				System.out.println("");
 				
-				
 				// 12				
 				// 11で変換した【年齢・身長】を整数型に変換して出力してください	
 				// Integer ageInt = Integer.valueOf(ageStr);
@@ -292,11 +285,9 @@ public class Qes1_13 {
 				System.out.println(ageInt);
 				// heighIntをコンソールに出力
 				System.out.println(heightInt);
-				
 				// 改行
 				System.out.println("");
 				
-		
 				// 13				
 				// 12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
 				// ただしif文は使わないでください			
@@ -305,7 +296,6 @@ public class Qes1_13 {
 				boolean jagement13 = ageInt == 25 || heightInt >= 160;
 				// jagement13の結果をコンソールに出力
 				System.out.println(jagement13);
-
 	}
 
 }
