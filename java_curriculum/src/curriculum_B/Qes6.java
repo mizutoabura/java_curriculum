@@ -1,10 +1,17 @@
 package curriculum_B;
 
+import java.util.Random;
+
 public class Qes6 {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+		
 
+	}
+	
+	public static int mNum () {
+		Random rand = new Random();
+		return rand.nextInt(11);
 	}
 
 }
