@@ -1,5 +1,6 @@
 package curriculum_B;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Qes6 {
@@ -11,7 +12,30 @@ public class Qes6 {
 		String[] names = getName.split("、");
 		
 		for (String name : names) {
-			System.out.println(name);
+			switch (name) {
+				case "パソコン":
+				System.out.println("パソコン" + "の残りの台数は"+ rNum() + "台です");
+				break;
+				case "冷蔵庫":
+				System.out.println("冷蔵庫" + "の残りの台数は"+ rNum() + "台です");
+				break;
+				case "扇風機":
+				System.out.println("扇風機" + "の残りの台数は"+ rNum() + "台です");
+				break;
+				case "洗濯機":
+				System.out.println("洗濯機" + "の残りの台数は"+ rNum() + "台です");
+				break;
+				case "加湿器":
+				System.out.println("加湿器" + "の残りの台数は"+ rNum() + "台です");
+				break;
+				case "テレビ":
+				case "ディスプレイ":
+				System.out.println(name + "の残りの台数は"+ rNum() + "台です");
+				break;
+				default:
+				System.out.println("『 " + name + " 』は指定の商品ではありません");
+			}
+			
 		}
 	}
 	
@@ -21,10 +45,10 @@ public class Qes6 {
 	
 
 	
-//	public static int mNum () {
-//		Random rand = new Random();
-//		return rand.nextInt(12);
-//	}
+	public static int rNum () {
+		Random rand = new Random();
+		return rand.nextInt(12);
+	}
 	
 	
 	
