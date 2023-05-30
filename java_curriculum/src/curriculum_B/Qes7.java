@@ -58,23 +58,21 @@ public class Qes7 {
 			avgSci += scoreSci;
 			// 人数分社会の点数を足す
 			avgSoc += scoreSoc;
-			// 平均点たちを求める処理
-			if (i == studentNum) {
-				
-				// 全生徒の全ての教科の平均点
-				toSc = (avgEn + avgMa + avgSci + avgSoc) / (studentNum * 4);
-				// 英語の平均点
-				avgEn = avgEn/studentNum;
-				// 数学の平均点
-				avgMa = avgMa/studentNum;
-				// 理科の平均点
-				avgSci = avgSci/studentNum;
-				// 社会の平均点
-				avgSoc = avgSoc/studentNum;
-				
-			}
 
 		}
+			
+			// 全生徒の全ての教科の平均点
+			toSc = (avgEn + avgMa + avgSci + avgSoc) / (studentNum * 4);
+			// 英語の平均点
+			avgEn = avgEn/studentNum;
+			// 数学の平均点
+			avgMa = avgMa/studentNum;
+			// 理科の平均点
+			avgSci = avgSci/studentNum;
+			// 社会の平均点
+			avgSoc = avgSoc/studentNum;
+			
+
 		
 		// 生徒一人一人の平均点出力
 		for (int i = 1; i <= studentNum; i ++) {
