@@ -25,6 +25,7 @@ public class Qes7 {
 		double avgSoc = 0;
 		// 平均点を受け取る変数を定義
 		double toSc = 0;
+		
 		// 生徒の人数分各教科の点数をコンソールから受け取る
 		for (int i = 1; i <= studentNum; i ++) {
 			
@@ -44,6 +45,7 @@ public class Qes7 {
 			System.out.print(i + "人目の『社会』の点数を入力してください :");
 			// 社会の点数を受け取る変数
 			double scoreSoc = sc.nextInt();
+			
 			// 改行する処理
 			System.out.println("\n");
 			// 平均点を求める処理
@@ -78,12 +80,11 @@ public class Qes7 {
 		for (int i = 1; i <= studentNum; i ++) {
 		
 		// 各生徒の平均点出力
-		System.out.println(i + "人目の平均点は" +  String.format("%.2f", avgs.get(i-1)) + "点です。");
+		System.out.println(i + "人目の平均点は" +  String.format("%.2f", avgs.get(i-1)) + "点です。\n");
 		
 		}
 		
-		// 改行の処理
-		System.out.println("\n");
+
 		// 英語の平均点を出力
 		System.out.println("英語の平均点は" + String.format("%.2f", avgEn) + "点です。");
 		// 数学の平均点を出力
