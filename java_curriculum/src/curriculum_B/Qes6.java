@@ -13,6 +13,9 @@ public class Qes6 {
 		// コンソールで受け取った値を、で区切って配列で受け取る
 		String[] names = sc.next().split("、");
 		
+		//close処理
+		sc.close();
+		
 		// テレビの個数を格納する変数
 		int tv = rNum();
 		// ディスプレイの数を格納する変数
@@ -46,17 +49,20 @@ public class Qes6 {
 
 				// 値がテレビの時とディスプレイの時の処理
 				case "テレビ": 
+					
 				case "ディスプレイ":
+					
 					// 受け取った値によって処理を分ける
 					int num = name.equals( "テレビ") ? tv : dp;
 					// 入力された家電のの在庫数をコンソールに出力
 					System.out.println(name + "の残りの台数は"+ num  + "台です" + "\n");
 					break;
-					
-				// その他の場合の処理
+				
+				// 上記以外の時の処理
 				default:
 					// コンソールにコメントを出力
-					System.out.println("『 " + name + " 』は指定の商品ではありません");
+					System.out.println("『 " + name + " 』は指定の商品ではありません\n");
+					break;
 			
 			}
 			
