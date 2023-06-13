@@ -1,6 +1,7 @@
 package curriculum_18;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 
 public class Curriculum_New_1_18 {
@@ -9,7 +10,7 @@ public class Curriculum_New_1_18 {
 	/****************************
 	 * 「Hello JavaSE 11」を出力するメソッド
 	 ****************************/
-	public static void message (String message , int num) {
+	public static void message(String message, int num) {
 		
 		// 受け取った引数をコンソールに出力
 		System.out.println(message + "\s" + num + "\n");
@@ -20,7 +21,7 @@ public class Curriculum_New_1_18 {
 	/****************************
 	 * 乗算した値を出力するメソッド
 	 ****************************/
-	public static void calculation (int mul1 , int mul2) {
+	public static void calculation(int mul1 , int mul2) {
 		
 		// 乗算した値をコンソールに出力
 		System.out.println(mul1 * mul2 + "\n");
@@ -31,15 +32,11 @@ public class Curriculum_New_1_18 {
 	/****************************
 	 * 受け取った値を順番にコンソールに出力するメソッド
 	 ****************************/
-	public static void numbers (int[] nums) {
+	public static void numbers(int[] nums) {
 		
 		// 受け取った値全てコンソールに出力する処理
-		for (int num : nums) {
-			
-			// 受け取った値全てコンソールに出力
-			System.out.print(num + "\s");
-			
-		}
+		System.out.println(Arrays.toString(nums));
+		
 		
 	}
 			
@@ -48,10 +45,10 @@ public class Curriculum_New_1_18 {
 	/****************************
 	 * 引数同士を和算しコンソールに出力するメソッド
 	 ****************************/
-	public static void calculation (double sum1 , double sum2) {
+	public static void calculation(double num1, double num2) {
 		
 		// 受け取った値の合計を変数に格納
-		double sum = sum1 + sum2;
+		double sum = num1 + num2;
 		// コンソールに和算した値を出力
 		System.out.println("\n" + "\n" + sum + "\n");
 		
@@ -63,7 +60,7 @@ public class Curriculum_New_1_18 {
 	/****************************
 	 * 引数同士を和算しコンソールに出力するメソッド
 	 ****************************/
-	public static ArrayList<Integer> randomNum (int num ) {
+	public static ArrayList<Integer> randomNum(int num ) {
 		
 		// ランダムインスタンスを作成
 		Random rand = new Random();
@@ -92,15 +89,14 @@ public class Curriculum_New_1_18 {
 	/****************************
 	 * Q5の配列の平均値をコンソールに出力するメソッド
 	 ****************************/
-	public static double avg () {
+	public static double avg(ArrayList<Integer> nums) {
 		
-		// Q5の配列を受け取って変数に格納
-		ArrayList<Integer> list = randomNum(20);
+
 		// 合計値を格納する変数を宣言
 		int sum = 0;
 		
 		// 配列の合計を得る処理
-		for (int num : list) {
+		for (int num : nums) {
 			
 			// 配列の値全てを足す
 			sum += num;
@@ -108,7 +104,7 @@ public class Curriculum_New_1_18 {
 		}
 		
 		// 平均値を求めて変数に格納
-		double avg = (double) sum / list.size();
+		double avg = (double)sum / nums.size();
 		// 平均値をコンソールに出力
 		System.out.println(avg);
 		// 平均値を呼び出し元に返す
@@ -121,10 +117,8 @@ public class Curriculum_New_1_18 {
 	/****************************
 	 * Q6の平均値が50より大きいか小さいか判断する処理
 	 ****************************/
-	public static void judgment () {
+	public static void judgment(double num) {
 		
-		// 	Q5の平均値を変数に格納
-		double num = avg ();
 		// 平均値が50より大きいか小さいかの判断を変数に格納
 		boolean judge = num >= 50;
 		// 判定結果をコンソールに出力
@@ -140,24 +134,24 @@ public class Curriculum_New_1_18 {
 		message("Hello JavaSE",11); 
 		
 		// Q1メソッド呼び出し
-		calculation(2 , 5);
+		calculation(2, 5);
 		
 		// 引数に入れる配列作成
-		int[] num = {1,2,3,4,5,6,7,8,9};
+		int[] num = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 		// Q3メソッド呼び出し
 		numbers(num);
 		
 		// Q4メソッド呼び出し
-		calculation(2.5,7.8);
+		calculation(2.5, 7.8);
 		
 		// Q5メソッド呼び出し
 		randomNum(20);
 		
 		// Q6メソッド呼び出し
-		avg();
+		avg(randomNum(20));
 		
 		// Q7メソッド呼び出し
-		judgment();
+		judgment(avg(randomNum(20)));
 	
 	}
 
