@@ -16,9 +16,7 @@ public class Main {
 	 */
 		
 		// 動物の情報を持ったインスタンスを作成
-		Animal animal = new Animal();
-		// 動物の情報を変数に格納
-		animal.setInfo("ライオン", 2.1, 80);
+		Animal animal = new Animal("ライオン", 2.1, 80);
 		
 		// 動物名をコンソールに出力
 		System.out.println("動物名:" + animal.getName());

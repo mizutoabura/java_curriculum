@@ -45,7 +45,7 @@ public class Animal {
 	}
 	
 	// 動物の情報を変数に代入するメソッド
-	public void setInfo(String name, double height, int speed) {
+	public Animal(String name, double height, int speed) {
 		
 		// 動物の名前を変数に代入
 		this.name = name;
