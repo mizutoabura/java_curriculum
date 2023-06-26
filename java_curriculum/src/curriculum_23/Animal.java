@@ -45,13 +45,32 @@ public class Animal {
 	}
 	
 	// 動物の情報を変数に代入するメソッド
-	public Animal(String name, double height, int speed) {
+	public Animal() {
 		
 		// 動物の名前を変数に代入
-		this.name = name;
+		this.name = "名前";
 		// 動物の体長を変数に代入
-		this.height = height;
+		this.height = 0;
 		// 動物の速度を変数に代入
+		this.speed = 0;
+		
+	}
+	
+	// 今追加した分
+	public void setName(String name) {
+		
+		this.name = name;
+		
+	}
+	
+	public void setHeight(double height) {
+		
+		this.height = height;
+		
+	}
+	
+	public void setSpeed(int speed) {
+		
 		this.speed = speed;
 		
 	}
