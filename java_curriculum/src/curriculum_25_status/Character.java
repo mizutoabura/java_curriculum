@@ -28,13 +28,11 @@ public class Character extends Status{
 	 */
 	
 	// 名前を入力してもらって値を格納するコンストラクタ
-	public Character() {
+	public Character(Scanner scanner) {
 		
-		// コンストラクタにお願いを出力
-		System.out.println("名前を入力してください");
 		// 名前を変数に代入
-		super.setName(myName());
-
+		super.setName(myName(scanner));
+		
 	}
 	
 	// コンソールにキャラクターのステータスを出力
@@ -60,14 +58,10 @@ public class Character extends Status{
 	}
 	
 	// キャラクターの名前をコンソールから受け取り値を返すメソッド
-	public String myName() {
+	public String myName(Scanner scanner) {
 		
-		// 標準入力で名前を受け取る
-		Scanner scanner = new Scanner(System.in);
 		// 変数に受け取った値を代入
 		String myName = scanner.nextLine();
-		// スキャナーを閉じる
-		scanner.close();
 		//呼び出しもとに名前を返す
 		return myName;
 		

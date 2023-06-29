@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Status {
 
-
 		/*
 		 
 		 名前を入力したら下記がコンソールに出力されるように作ってください

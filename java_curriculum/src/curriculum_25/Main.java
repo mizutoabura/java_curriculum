@@ -1,10 +1,14 @@
 package curriculum_25;
 
+import java.util.Scanner;
+
 import curriculum_25_status.Character;
+
 
 public class Main {
 
 	public static void main(String[] args) {
+		
 		/*
 		 
 		 名前を入力したら下記がコンソールに出力されるように作ってください
@@ -28,11 +32,19 @@ public class Main {
 		 
 		 */
 		
+		// コンストラクタにお願いを出力
+		System.out.println("名前を入力してください");
+		// 標準入力で名前を受け取る
+		Scanner scanner = new Scanner(System.in);
 		// キャラクターのインスタンスを生成
-		Character character = new Character();
+		Character character = new Character(scanner);
 		// キャラクターステータスを呼び出し
 		character.statusOpen();
+		// スキャナーを閉じる
+		scanner.close();
+		
 
 	}
+	
 
 }
