@@ -28,7 +28,7 @@ public class Main {
 			素早さ：937
 			防御力：24
 
-			さあ冒険に出かけよう！
+			さあ冒険に出かけよう！j
 		 
 		 */
 		
@@ -37,12 +37,13 @@ public class Main {
 		// 標準入力で名前を受け取る
 		Scanner scanner = new Scanner(System.in);
 		// キャラクターのインスタンスを生成
-		Character character = new Character(scanner);
+		Character character = new Character();
+		// 名前を変数に代入
+		character.setName(character.myName(scanner));
 		// キャラクターステータスを呼び出し
 		character.statusOpen();
 		// スキャナーを閉じる
 		scanner.close();
-		
 
 	}
 	

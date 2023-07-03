@@ -1,6 +1,5 @@
 package curriculum_25_status;
 
-import java.util.Random;
 
 public class Status {
 
@@ -43,20 +42,19 @@ public class Status {
 		// 名前以外の値を入力
 		public Status() {
 			
-			// ランダムインスタンスを生成
-			Random rnd = new Random();
-			// 体力に0～999までの値をランダムで代入
-			this.hp = rnd.nextInt(1000);
-			// 魔力に0～999までの値をランダムで代入
-			this.mp = rnd.nextInt(1000);
-			// 攻撃力に0～999までの値をランダムで代入
-			this.power = rnd.nextInt(1000);
-			// 素早さに0～999までの値をランダムで代入
-			this.agility = rnd.nextInt(1000);
-			// 防御力に0～999までの値をランダムで代入
-			this.defense = rnd.nextInt(1000);
+			// 初期値0を設定
+			this.hp = 0;
+			// 初期値0を設定
+			this.mp = 0;
+			// 初期値0を設定
+			this.power = 0;
+			// 初期値0を設定
+			this.agility = 0;
+			// 初期値0を設定
+			this.defense = 0;	
 			
 		}
+		
 		
 		// 名前の値を取得
 		public String getName() {
