@@ -7,10 +7,7 @@ import java.util.List;
 
 public class Beans implements Serializable{
 
-// あしたやるとこ
-// https://www.bold.ne.jp/engineer-club/java-beans
-	
-	// private String text;
+
 	// 学名を格納するための変数
 	private String scName;
 	// スキャナーで受け取った動物の情報格納する配列
