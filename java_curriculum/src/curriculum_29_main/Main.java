@@ -73,14 +73,15 @@ public class Main {
 		面積：6362.0km2
 		
 	 */
-//		String text = "a,g,e,10,1d1";
-//		System.out.println(text);
-//		text = text.replaceAll("[^0-9,]+", "");
-//		System.out.println(text);
-		 Sort sort = new Sort();
-		 Scanner sc = new Scanner(System.in);
-		 System.out.println("0～10までの数字をカンマで区切って入力してください。\n改行後、降順の昇順のどちらかを入力してください。");
-		 sort.separateNum(sc.nextLine(),sc.nextLine());
+		// 都道府県並べ替えクラスのインスタンスを作成
+		Sort sort = new Sort();
+		// コンソールで値を受け取るためのスキャナー
+		Scanner sc = new Scanner(System.in);
+		// コンソールにお願いを出力
+		System.out.println("0～10までの数字をカンマで区切って入力してください。\n改行後、降順の昇順のどちらかを入力してください。");
+		// 都道府県を昇順降順で表示する
+		sort.showPref(sc.nextLine(),sc.nextLine());
+		// コンソールを閉じる
 		sc.close();
 
 	}
