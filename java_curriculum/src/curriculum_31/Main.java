@@ -3,21 +3,32 @@ package curriculum_31;
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		// 自己紹介情報を持ったインスタンスを生成
-		// Person person1 = new Person("鈴木太郎", 20, 1.7, 60);
-		Car pelson1 = new Car();
-		Bicycle pelson2 = new Bicycle();
-		
+		Person person1 = new Person("鈴木", "太郎", 20, 1.7, 60);
 
-		// 自己紹介を出力するメソッドを呼び出し
-		// person1.print();
-		
-		pelson1.setOwner("中原中也");
-		pelson2.setOwner("鈴木太郎");
+		// 自己紹介情報を持ったインスタンスを生成
+		Person person2 = new Person("山田", "花子", 22, 1.5, 40);
 
-		System.out.println(pelson1.getOwner());
-		System.out.println(pelson2.getOwner());
+		// Carインスタンスの作成
+		Car car = new Car();
+		// Bicycleインスタンスの作成
+		Bicycle bicycle = new Bicycle();
+
+		// carインスタンスの所有者の値をセットする
+		car.setOwner(person1.fullName());
+		// bicycleインスタンスの所有者の値をセットする
+		bicycle.setOwner(person2.fullName());
+
+		// 乗り物の所有者を表示する
+		System.out.println(car.getOwner());
+		// 乗り物の所有者を表示する
+		System.out.println(bicycle.getOwner());
+
+		// 購入者を表示するメソッドを呼び出し
+		person1.buy(car);
+		// 購入者を表示するメソッドを呼び出し
+		person2.buy(bicycle);
 
 	}
 
