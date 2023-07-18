@@ -45,7 +45,7 @@ public class Person{
 		// 年齢を出力
 		System.out.println("年は" + this.age  + "才です");
 		// bmiを出力
-		System.out.println("BMIは" + bmi() + "です");
+		System.out.println("BMIは" + Math.floor( bmi()) + "です");
 		// 人数の合計を出力
 		System.out.println("合計" + count + "人です");
 
